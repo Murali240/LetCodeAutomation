@@ -19,13 +19,13 @@ public class ConfigReader {
 	       } catch (IOException e) {
 	           throw new RuntimeException("Failed to load config.properties file", e);
 	       }
-	   }
-	   
+	   }   
 
 	   /** Returns the property value for the given key */
 	   public static String getProperty(String key) {
 	       return properties.getProperty(key);
 	   }
 
+	   
 }
 

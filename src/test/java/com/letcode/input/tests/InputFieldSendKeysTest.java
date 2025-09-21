@@ -21,8 +21,18 @@ public class InputFieldSendKeysTest extends BaseTest {
         /** Step 2: Click Edit button */
         inputPage.clickEditButton();
 
-        /** Step 3: Verify Input heading is displayed */
-        Assert.assertTrue(inputPage.isInputHeadingDisplayed(), "❌ Input heading should be displayed");
+        /** Step 3: Fetch dynamic heading from page & Verify Input heading is displayed */
+        String heading = inputPage.getPageHeading();
+        ExtentManager.getTest().info("Verifying page heading dynamically: <b>" + heading+"</b>");
+        
+        try {
+         // Example assertion (if you have an expected heading for this test)
+            Assert.assertEquals(heading, "Input", "❌ Page heading does not match");
+            test.pass("Page heading verified successfully: " + heading);
+        } catch (AssertionError e) {
+            test.fail("Page heading verification failed! Found: " + heading);
+            throw e;         // rethrow to fail the test
+        }
                
         /** Step 4: Enter name into Full Name input field */
         String expectedName = "Gopi Krishna";

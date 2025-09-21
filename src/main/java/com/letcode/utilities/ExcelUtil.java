@@ -11,7 +11,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 /** Utility class for reading login credentials from Excel */
 public class ExcelUtil {
 
-	  /** Reads all login credentials (email, password) from given Excel sheet */
+   /** Reads all login credentials (email, password) from given Excel sheet */
    public static Object[][] getAllLoginCredentials(String fileName, String sheetName) {
        Object[][] data = null;
 

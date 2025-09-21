@@ -2,7 +2,6 @@ package com.letcode.utilities;
 
 import com.aventstack.extentreports.ExtentTest;
 
-
 /** Manages ExtentTest instances for thread-safe reporting */
 public class ExtentManager {
 

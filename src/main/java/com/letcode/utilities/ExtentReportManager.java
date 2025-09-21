@@ -3,7 +3,6 @@ package com.letcode.utilities;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
-
 /** Utility class for creating and managing ExtentReports instance */
 public class ExtentReportManager {
 

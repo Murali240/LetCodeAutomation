@@ -10,7 +10,6 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.io.FileHandler;
 
-
 /** Utility class for capturing and saving screenshots */
 public class ScreenshotUtil {
 	
@@ -19,14 +18,14 @@ public class ScreenshotUtil {
         TakesScreenshot ts = (TakesScreenshot) driver;
         File src = ts.getScreenshotAs(OutputType.FILE);
 
-     // Create "screenshots" folder if it doesn't exist
+        /** Create "screenshots" folder if it doesn't exist */
         String folderPath = System.getProperty("user.dir") + "/screenshots";
         File folder = new File(folderPath);
         if (!folder.exists()) {
-            folder.mkdirs(); // ✅ Create missing folders
+            folder.mkdirs();     // ✅ Create missing folders
         }
 
-     // Create unique file name with timestamp
+        /** Create unique file name with timestamp */
         String filePath = folderPath + "/" + baseFileName + "_" + getCurrentTimestamp() + ".png";
         File dest = new File(filePath);
         FileHandler.copy(src, dest);

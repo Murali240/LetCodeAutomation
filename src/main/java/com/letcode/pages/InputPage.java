@@ -6,31 +6,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class InputPage {
+public class InputPage extends BasePage {
 	
-	private WebDriver driver;
-	
-	/* ---------------- Constructor ---------------- */
-
+	/* -------------- Constructor -------------- */
     public InputPage(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);
+        super(driver);                            // Call BasePage constructor
+        PageFactory.initElements(driver, this);   // Initialize InputPage elements
     }
 	
 
     /* ---------------- Locators ---------------- */
-
-    /** Navigation link for Work-Space in the top menu */
-    @FindBy(xpath = "//a[normalize-space()='Work-Space']")
-    private WebElement workSpaceLink;
-
     /** Edit button inside the Work-Space section */
     @FindBy(xpath = "//a[normalize-space()='Edit']")
     private WebElement editButton;
-
-    /** Page heading for Input page */
-    @FindBy(xpath = "//h1[normalize-space()='Input']")
-    private WebElement inputHeading;
 
     /** Input field for entering full name */
     @FindBy(id = "fullName")
@@ -56,24 +44,12 @@ public class InputPage {
     @FindBy(id = "dontwrite")
     private WebElement confirmTextIsReadOnly;
 
-
     
 
     /* ---------------- Action Methods ---------------- */
-
-    /** Clicks on the Work-Space link in the navigation bar */
-    public void clickWorkSpaceLink() {
-        workSpaceLink.click();
-    }
-
     /** Clicks on the Edit button in the Work-Space section */
     public void clickEditButton() {
         editButton.click();
-    }
-
-    /** Checks if the Input page heading is displayed */
-    public boolean isInputHeadingDisplayed() {
-        return inputHeading.isDisplayed();
     }
 
     /** Enters the given name into the Full Name input field */
@@ -86,7 +62,7 @@ public class InputPage {
         joinInput.sendKeys(text);                            // Append text
         joinInput.sendKeys(Keys.TAB);                        // Press TAB to move focus
         
-     // Return the current full text of the input field
+        /** Return the current full text of the input field */
         return joinInput.getAttribute("value");
     }
 
@@ -122,9 +98,9 @@ public class InputPage {
     
     /** Returns true if the DontWrite input field is read-only */
     public boolean isConfirmTextIsReadOnly() {
-     // "readonly" attribute is present if field is read-only
+        /** "readonly" attribute is present if field is read-only */
         String readonlyAttr = confirmTextIsReadOnly.getAttribute("readonly");
-        return readonlyAttr != null;                                   // returns true if readonly attribute exists
+        return readonlyAttr != null;      // returns true if readonly attribute exists
     }
 
     /** Attempts to enter text into the DontWrite input field */
