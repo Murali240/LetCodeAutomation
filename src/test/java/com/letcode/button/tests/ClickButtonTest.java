@@ -18,7 +18,7 @@ public class ClickButtonTest extends BaseTest {
         /** Click on "Click" button */
         buttonPage.clickOnClickButton();
         ExtentManager.getTest().pass("Clicked on 'Click' button.");
-        ExtentManager.getTest().info("Page heading after click: " + buttonPage.getPageHeading());
+        ExtentManager.getTest().info("Page heading after click: <b>" + buttonPage.getPageHeading()+"</b>");
 
         /** Click "Goto Home" button */
         buttonPage.clickOnGotoHomeButton();
