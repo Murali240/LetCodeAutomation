@@ -10,7 +10,7 @@ import com.letcode.utilities.WaitUtils;
 
 public class DragPageTest extends BaseTest {
 
-    @Test
+    @Test (groups = {"regression"})
     public void verifyDragSampleBox() {
 
 	        DragPage dragPage = new DragPage(driver);

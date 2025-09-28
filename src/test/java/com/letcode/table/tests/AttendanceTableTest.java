@@ -11,7 +11,7 @@ import com.letcode.utilities.WaitUtils;
 
 public class AttendanceTableTest extends BaseTest {
 	
-	    @Test
+	    @Test (groups = {"sanity"})
 	    public void markRajAsPresent() {
 	    	
 	    	TablePage tablePage = new TablePage(driver);

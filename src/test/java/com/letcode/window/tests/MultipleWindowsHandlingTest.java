@@ -13,7 +13,7 @@ public class MultipleWindowsHandlingTest extends BaseTest {
 	WindowPage windowPage;
 	ExtentTest test;
 	
-	 @Test (priority = 0)
+	 @Test (groups = {"regression", "priority = 0"})
 	    public void verifyChildWindowTitleUsingList() {
 		 
 		    windowPage = new WindowPage(driver);
@@ -34,7 +34,7 @@ public class MultipleWindowsHandlingTest extends BaseTest {
 	        test.pass("✅ Validated child window title successfully using List: <b>" + childTitle+"</b>");
 	    }
 
-	    @Test (priority = 1)
+	    @Test (groups = {"regression", "priority = 1"})
 	    public void verifyChildWindowTitleUsingLinkedHashSetLoop() {
 	    	
 	    	windowPage = new WindowPage(driver);

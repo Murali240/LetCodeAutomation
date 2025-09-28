@@ -8,7 +8,7 @@ import com.letcode.utilities.ExtentManager;
 
 public class FindTheButtonColorTest extends BaseTest {
 	
-	    @Test
+	    @Test (groups = {"regression"})
 	    public void findButtonColorTest() {
 	    	
 	    	ButtonPage buttonPage = new ButtonPage(driver);

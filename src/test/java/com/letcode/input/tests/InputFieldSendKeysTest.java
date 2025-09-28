@@ -9,7 +9,7 @@ import com.letcode.utilities.ExtentManager;
 
 public class InputFieldSendKeysTest extends BaseTest {	
 	
-	@Test
+	@Test (groups = {"smoke"})
     public void verifyFullNameEnteredUsingSendKeys() {
 		
         /** Create Page Object */

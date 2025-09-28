@@ -9,7 +9,7 @@ import com.letcode.utilities.ExtentManager;
 
 public class ElementsPageTest extends BaseTest {
 	
-	@Test
+	@Test (groups = {"regression"})
     public void validateElementsPage() {
 		
 		ElementsPage elementsPage = new ElementsPage(driver);

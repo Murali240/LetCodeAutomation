@@ -8,7 +8,7 @@ import com.letcode.utilities.ExtentManager;
 
 public class PromptAlertTypeNameTest extends BaseTest {
 	
-	@Test
+	@Test (groups = {"smoke"})
 	public void verifyTypeNameAndAcceptPromptAlert() {
 		
 	    AlertPage alertPage = new AlertPage(driver);

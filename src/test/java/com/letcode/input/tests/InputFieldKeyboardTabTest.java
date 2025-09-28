@@ -11,7 +11,7 @@ import com.letcode.utilities.ExtentManager;
 public class InputFieldKeyboardTabTest extends BaseTest {
 
     /** Test case: Append text in Join field and verify cursor moves to GetMe field using TAB */
-    @Test
+    @Test (groups = {"regression"})
     public void verifyAppendTextAndKeyboardTab() {
 
         InputPage inputPage = new InputPage(driver);

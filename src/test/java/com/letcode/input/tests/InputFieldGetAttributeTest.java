@@ -9,7 +9,7 @@ import com.letcode.utilities.ExtentManager;
 
 public class InputFieldGetAttributeTest extends BaseTest {
 	
-	@Test
+	@Test (groups = {"regression"})
 	public void verifyInputFieldValue() {
 	
 		InputPage inputPage = new InputPage(driver);

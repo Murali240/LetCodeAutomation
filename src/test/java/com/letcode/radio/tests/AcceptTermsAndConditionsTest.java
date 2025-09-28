@@ -11,7 +11,7 @@ import com.letcode.utilities.WaitUtils;
 
 public class AcceptTermsAndConditionsTest extends BaseTest {
 	
-	    @Test
+	    @Test (groups = {"regression"})
 	    public void VerifyIAgreeCheckboxClick() {
 	    	
 	    	RadioPage radioPage = new RadioPage(driver);

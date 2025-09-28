@@ -11,7 +11,7 @@ import com.letcode.utilities.ExtentManager;
 
 public class WindowHandlingTest extends BaseTest {
 	
-	@Test
+	@Test (groups = {"regression"})
     public void verifyChildWindowTitleAndClose() {
 		
 		WindowPage windowPage = new WindowPage(driver);

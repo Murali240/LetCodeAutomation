@@ -9,7 +9,7 @@ import com.letcode.utilities.ExtentManager;
 
 public class ClickAndHoldButtonTest extends BaseTest {
 	
-	@Test
+	@Test (groups = {"regression"})
 	public void clickAndHoldButtonTest() {
 	    
 	    ButtonPage buttonPage = new ButtonPage(driver);

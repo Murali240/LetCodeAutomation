@@ -11,7 +11,7 @@ import com.letcode.utilities.WaitUtils;
 
 public class DropPageTest extends BaseTest {
     
-    @Test
+    @Test 
     public void verifyDragAndDrop() {
         DropPage dropPage = new DropPage(driver);
         ExtentTest test = ExtentManager.getTest();

@@ -15,6 +15,7 @@ public class BasePage {
 	/** Make driver visible to methods in this class and child classes */
 	protected WebDriver driver;
 	protected WebDriverWait wait;
+
 	
 	/* -------------- Constructor -------------- */
     public BasePage(WebDriver driver) {
@@ -52,6 +53,7 @@ public class BasePage {
     public boolean isLetCodeLogoDisplayed() {
         return letCodeLogo.isDisplayed();
     }
+    
 
 
 }

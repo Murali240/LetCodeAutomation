@@ -8,7 +8,7 @@ import com.letcode.utilities.ExtentManager;
 
 public class ClickButtonTest extends BaseTest {
 	
-	@Test
+	@Test (groups = {"smoke"})
     public void verifyButtonClicksAndNavigation() {
 		
 		ButtonPage buttonPage = new ButtonPage(driver);

@@ -10,7 +10,7 @@ import com.letcode.utilities.ExtentManager;
 
 public class FramePageTest extends BaseTest {
 	
-	@Test
+	@Test 
     public void verifyFrameHandlingConcepts() {
 		
 		FramePage framePage = new FramePage(driver);

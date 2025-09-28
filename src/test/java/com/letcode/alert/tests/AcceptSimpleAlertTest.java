@@ -9,7 +9,7 @@ import com.letcode.utilities.ExtentManager;
 
 public class AcceptSimpleAlertTest extends BaseTest {
 
-	    @Test
+	    @Test (groups = {"smoke"})
 	    public void verifyAcceptSimpleAlert() {
 	    	
 	    	AlertPage alertPage = new AlertPage(driver);

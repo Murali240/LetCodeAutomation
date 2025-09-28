@@ -8,7 +8,7 @@ import com.letcode.utilities.ExtentManager;
 
 public class ConfirmButtonIsDisabledTest extends BaseTest {
 	
-	@Test
+	@Test (groups = {"smoke"})
 	public void checkDisabledButtonTest() {
 		
 	    ButtonPage buttonPage = new ButtonPage(driver);

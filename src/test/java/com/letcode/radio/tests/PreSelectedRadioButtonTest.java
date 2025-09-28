@@ -10,7 +10,7 @@ import com.letcode.utilities.ExtentManager;
 
 public class PreSelectedRadioButtonTest extends BaseTest {
 	
-	@Test
+	@Test (groups = {"regression"})
     public void verifyBydefaultSelectedRadioButton() {
 		
 		RadioPage radioPage = new RadioPage(driver);

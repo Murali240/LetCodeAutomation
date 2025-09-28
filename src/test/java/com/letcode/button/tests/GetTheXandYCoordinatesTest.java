@@ -9,7 +9,7 @@ import com.letcode.utilities.ExtentManager;
 
 public class GetTheXandYCoordinatesTest extends BaseTest {
 	
-	    @Test
+	    @Test (groups = {"regression"})
 	    public void verifyGetButtonCoordinatesTest() {
 	    	
 	    	ButtonPage buttonPage = new ButtonPage(driver);

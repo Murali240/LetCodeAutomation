@@ -10,7 +10,7 @@ import com.letcode.utilities.WaitUtils;
 
 public class YesNoRadioButtonTest extends BaseTest {
 	
-	@Test
+	@Test (groups = {"sanity"})
 	public void verifySelectRadioButtonByChoice() {
 	   
 		RadioPage radioPage = new RadioPage(driver);

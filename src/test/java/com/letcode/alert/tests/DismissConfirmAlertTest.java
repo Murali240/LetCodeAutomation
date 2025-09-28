@@ -8,7 +8,7 @@ import com.letcode.utilities.ExtentManager;
 
 public class DismissConfirmAlertTest extends BaseTest {
 	
-	    @Test
+	    @Test (groups = {"smoke"})
 	    public void verifyDismissConfirmAlert() {
 	    	
             AlertPage alertPage = new AlertPage(driver);

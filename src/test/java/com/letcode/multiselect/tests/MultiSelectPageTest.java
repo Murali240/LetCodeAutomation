@@ -10,7 +10,7 @@ import com.letcode.utilities.WaitUtils;
 
 public class MultiSelectPageTest extends BaseTest {
 	
-	@Test
+	@Test (groups = {"sanity"})
     public void verifySelectAllItems() {
 		
         MultiSelectPage multiSelectPage = new MultiSelectPage(driver);

@@ -10,7 +10,7 @@ import com.letcode.utilities.ExtentManager;
 public class InputFieldClearTest extends BaseTest {
 
     /** Test case: Clear the text in ClearMe input field and log existing text in Extent */
-    @Test
+    @Test (groups = {"regression"})
     public void verifyClearingOfInputFieldText() {
 
         InputPage inputPage = new InputPage(driver);

@@ -9,7 +9,7 @@ import com.letcode.utilities.ExtentManager;
 
 public class WaitsPageTest extends BaseTest {
 	
-	    @Test
+	    @Test (groups = {"regression"})
 	    public void testClickTimeoutAndSimpleAlert() {
 		 
 		    WaitsPage waitsPage = new WaitsPage(driver);

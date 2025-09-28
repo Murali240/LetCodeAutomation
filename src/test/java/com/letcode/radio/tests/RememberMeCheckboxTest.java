@@ -9,7 +9,7 @@ import com.letcode.utilities.ExtentManager;
 
 public class RememberMeCheckboxTest extends BaseTest {
 	
-	@Test
+	@Test (groups = {"smoke"})
 	public void testRememberMeCheckboxSelection() {
 		
 		RadioPage radioPage = new RadioPage(driver);

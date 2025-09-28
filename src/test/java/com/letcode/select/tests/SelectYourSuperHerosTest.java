@@ -11,7 +11,7 @@ import com.letcode.utilities.ExtentManager;
 
 public class SelectYourSuperHerosTest extends BaseTest {
 	
-	@Test
+	@Test (groups = {"regression"})
 	public void selectMultipleSuperHerosTest() {
 		
 	    SelectPage selectPage = new SelectPage(driver);

@@ -10,7 +10,7 @@ import com.letcode.utilities.ExtentManager;
 
 public class SelectFruitByVisibleTextTest extends BaseTest {
 	
-	    @Test
+	    @Test (groups = {"regression"})
 	    public void selectAppleTest() {
 		 
 	    	SelectPage selectPage = new SelectPage(driver);

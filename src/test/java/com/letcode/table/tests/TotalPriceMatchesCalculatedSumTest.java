@@ -10,7 +10,7 @@ import com.letcode.utilities.ExtentManager;
 
 public class TotalPriceMatchesCalculatedSumTest extends BaseTest {
 	
-	    @Test
+	    @Test (groups = {"sanity"})
 	    public void verifyTotalPriceMatchesCalculatedSum() {
 	    	
 	    	TablePage tablePage = new TablePage(driver);

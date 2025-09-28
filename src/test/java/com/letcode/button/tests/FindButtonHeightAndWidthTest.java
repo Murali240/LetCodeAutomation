@@ -9,7 +9,7 @@ import com.letcode.utilities.ExtentManager;
 
 public class FindButtonHeightAndWidthTest extends BaseTest {
 	
-	    @Test
+	    @Test (groups = {"regression"})
 	    public void getButtonSizeTest() {
 	    	
 	    	ButtonPage buttonPage = new ButtonPage(driver);

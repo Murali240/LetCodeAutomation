@@ -1,6 +1,5 @@
 package com.letcode.radio.tests;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentTest;
@@ -10,7 +9,7 @@ import com.letcode.utilities.ExtentManager;
 
 public class ConfirmLastRadioButtonDisabledTest extends BaseTest {
 	
-	@Test
+	@Test (groups = {"regression"})
 	public void verifyDisabledRadioButton() {
 		
 		RadioPage radioPage = new RadioPage(driver);

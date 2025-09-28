@@ -9,7 +9,7 @@ import com.letcode.utilities.ExtentManager;
 
 public class CountrySelectionFromDropdownTest extends BaseTest {
 	
-	    @Test
+	    @Test (groups = {"sanity"})
 	    public void selectCountryAndVerifySelection() {
 	    	
             SelectPage selectPage = new SelectPage(driver);

@@ -10,7 +10,7 @@ import com.letcode.utilities.ExtentManager;
 public class InputFieldIsEnabledTest extends BaseTest {
 
     /** Test case: Verify that the NoEdit input field is disabled */
-    @Test
+    @Test (groups = {"regression"})
     public void verifyConfirmEditFieldIsDisabled() {
 
         InputPage inputPage = new InputPage(driver);

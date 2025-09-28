@@ -10,7 +10,7 @@ import com.letcode.utilities.ExtentManager;
 public class InputFieldReadOnlyTest extends BaseTest {
 
     /** Test case: Verify that the DontWrite input field is read-only and does not accept text */
-    @Test
+    @Test (groups = {"regression"})
     public void verifyConfirmTextIsReadOnly() {
 
         InputPage inputPage = new InputPage(driver);

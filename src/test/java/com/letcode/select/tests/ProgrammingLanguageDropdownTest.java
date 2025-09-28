@@ -13,7 +13,7 @@ import com.letcode.utilities.ExtentManager;
 
 public class ProgrammingLanguageDropdownTest extends BaseTest {
 	
-	    @Test
+	    @Test (groups = {"sanity"})
 	    public void selectLastProgrammingLanguageTest() {
 		 
 	    	SelectPage selectPage = new SelectPage(driver);

@@ -9,7 +9,7 @@ import com.letcode.utilities.ExtentManager;
 
 public class SweetAlertTest extends BaseTest {
     
-    @Test
+    @Test (groups = {"smoke"})
     public void validateModernSweetAlert() {
     	
         AlertPage alertPage = new AlertPage(driver);

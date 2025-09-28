@@ -12,7 +12,7 @@ import com.letcode.utilities.ExtentManager;
 
 public class SliderBarMoveTest extends BaseTest {
 
-    @Test
+    @Test (groups = {"regression"})
     public void verifySliderBarMoveAndCountries() {
 
         SliderPage sliderPage = new SliderPage(driver);

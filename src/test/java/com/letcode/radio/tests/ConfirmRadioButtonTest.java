@@ -11,7 +11,7 @@ import com.letcode.utilities.ExtentManager;
 public class ConfirmRadioButtonTest extends BaseTest {
 	
 	/** Verify selecting Confirm Yes and No radio buttons */
-	@Test
+	@Test (groups = {"regression"})
 	public void testSelectConfirmRadioButtons() {
 		
 		RadioPage radioPage = new RadioPage(driver);
